@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page - Senses Essence</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Complete Your Payment</h1>
+        <marquee behavior="scroll" direction="left">Senses Essence - Discover Your Signature Scent</marquee>
+    </header>
+    <main>
+        <section class="payment">
+            <h2>Payment Details</h2>
+            <p>Scan the QR code below to complete the payment:</p>
+            <img src="qr-code.jpg" alt="QR Code" style="max-width: 150px;">            
+            <form action="thank_you.html" method="post">
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" pattern="[0-9]{16}" maxlength="16" placeholder="1234 5678 9123 4567" required>
+                </div>                
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="month" id="expiry-date" name="expiry-date" required>
+                </div>                
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" maxlength="3" placeholder="123" required>
+                </div>                
+                <div class="form-group">
+                    <label for="billing-address">Billing Address:</label>
+                    <textarea id="billing-address" name="billing-address" rows="4" placeholder="Enter your billing address" required></textarea>
+                </div>    
+                <div class="form-group">
+                    <label for="qr-code">Upload QR Code:</label>
+                    <input type="file" id="qr-code" name="qr-code" accept="image/*" required>
+                </div>
+                <input type="submit" value="Complete Purchase">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

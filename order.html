@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page - Senses Essence</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header h1 {
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Order Your Favorite Perfume</h1>
+        <marquee behavior="scroll" direction="left">Senses Essence - Discover Your Signature Scent</marquee>
+    </header>
+    <main>
+        <section class="order">
+            <form action="payment.html" method="get" class="order-form">
+                <label for="perfume">Select Perfume:</label>
+                <select id="perfume" name="perfume" required>
+                    <option value="elegance">Elegance</option>
+                    <option value="vibrance">Vibrance</option>
+                    <option value="serenity">Serenity</option>
+                    <option value="intensity">Intensity</option>
+                    <option value="romance">Romance</option>
+                    <option value="passion">Passion</option>
+                </select><br><br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Proceed to Payment">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

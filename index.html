@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senses Essence - Perfume Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-btn">&times;</span>
+            <img src="ig1.jfif" alt="Featured Perfume">
+        </div>
+    </div>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <marquee behavior="scroll" direction="left">Senses Essence - Discover Your Signature Scent</marquee>
+    </header>
+    <main>
+        <section id="home">
+            <div class="banner">
+                <a href="order.html"><img src="ig.png" alt="Banner Image"></a>
+            </div>
+        </section>
+
+        <section class="collection">
+            <div class="perfume">
+                <img src="image11.jpg" alt="Perfume 1">
+                <h3>Elegance</h3>
+                <p>Graceful and luxurious.</p>
+            </div>
+            <div class="perfume">
+                <img src="image6.webp" alt="Perfume 2">
+                <h3>Vibrance</h3>
+                <p>Fresh and invigorating.</p>
+            </div>
+            <div class="perfume">
+                <img src="image3.jfif" alt="Perfume 3">
+                <h3>Serenity</h3>
+                <p>Calm and soothing.</p>
+            </div>
+            <div class="perfume">
+                <img src="image5.avif" alt="Perfume 4">
+                <h3>Intensity</h3>
+                <p>Bold and powerful.</p>
+            </div>
+            <div class="perfume">
+                <img src="image4.webp" alt="Perfume 5">
+                <h3>Romance</h3>
+                <p>Sweet and enchanting.</p>
+            </div>
+            <div class="perfume">
+                <img src="image13.jpg" alt="Perfume 6">
+                <h3>Passion</h3>
+                <p>Fiery and passionate.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Senses Essence, your go-to destination for discovering exquisite perfumes that match your personality. Our collection offers a wide range of fragrances designed to evoke different moods and memories, ensuring you'll find the perfect scent that resonates with your unique essence.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer personalized fragrance consultations, exclusive gift wrapping, and customization services to make your purchase as special as the fragrance itself.</p>
+        </section>
+        <section id="contact" class="contact container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, please contact us using the form below:</p>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Senses Essence</p>
+    </footer>
+    <script>
+        window.onload = function() {
+            var modal = document.getElementById("modal");
+            var closeBtn = document.getElementById("close-btn");
+            modal.style.display = "block";
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
